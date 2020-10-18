@@ -10,7 +10,7 @@ namespace homework1
         {
             Console.WriteLine("Hello Variables!");
 
-            const double pi = 3.14159265;
+            const double Pi = 3.14159265;
             {
                 Console.WriteLine("Задание 1");
                 //Выполните и рассчитайте результат следующих операций для переменных:
@@ -38,9 +38,9 @@ namespace homework1
                 Console.WriteLine("Задание 2");
                 //Вычислите среднее арифметическое трех целочисленных значений и выведите его на экран. 
 
-                double a = 4, b = 9, c = 12;
+                int a = 4, b = 9, c = 12;
 
-                double average = (a + b + c) / 3; //тут не додумался как вывести дробное число, полученное из int a,b,c :'(
+                double average = (double)(a + b + c) / 3; 
 
                 Console.WriteLine(average);
                 Console.ReadLine();
@@ -52,9 +52,9 @@ namespace homework1
 
                 int r = 8;
 
-                double S = pi * Math.Pow(r, 2);
+                double S = Pi * Math.Pow(r, 2);
 
-                Console.WriteLine("Площадь круга равна " + S + " cm2.");
+                Console.WriteLine($"Площадь круга равна {S} cm2.");
                 Console.ReadLine();
             }
             {
@@ -68,7 +68,7 @@ namespace homework1
 
                 double V = pi * Math.Pow(r, 2) * h;
 
-                Console.WriteLine("Объем цилиндра равен " + V + " cm3.");
+                Console.WriteLine($"Объем цилиндра равен {V} cm3.");
 
                 double S = 2 * pi * r * (r + h);
 
