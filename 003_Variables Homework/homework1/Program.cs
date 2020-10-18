@@ -66,13 +66,13 @@ namespace homework1
                 byte r = 6;
                 byte h = 14;
 
-                double V = pi * Math.Pow(r, 2) * h;
+                double V = Pi * Math.Pow(r, 2) * h;
 
                 Console.WriteLine($"Объем цилиндра равен {V} cm3.");
 
-                double S = 2 * pi * r * (r + h);
+                double S = 2 * Pi * r * (r + h);
 
-                Console.WriteLine("Площадь поверхности цилиндра равна " + S + " cm2.");
+                Console.WriteLine($"Площадь поверхности цилиндра равна {S} cm2.");
                 Console.Read();
             }
         }
